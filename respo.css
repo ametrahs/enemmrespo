@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+header ul{
+    list-style: none;
+}
+
+  header nav.navbar{
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+width: 100%;
+justify-content: space-between;
+color: whitesmoke;
+padding: 20px;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+.navlinks li{
+  margin: 0 30px;  
+}
+.active{
+    color:white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #4caf51;
+}
+ 
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image:url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+justify-content: center;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-content{
+margin-bottom: 150px;
+color: whitesmoke;
+text-align: center;
+}
+.main-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #4caf51;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.main-content h1{
+font-size: 7vmin;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+.btn{
+   padding: 8px 15px; 
+   background-color: #4caf51;
+   border-radius: 30px;
+}
+.menu-btn{
+    display: none;
+}
+@media only screen and (max-width:850px)
+{
+    
+    .navbar{
+        padding: 0;
+    }
+      header h1.logo{
+        position: absolute;
+        top:30px;
+        left:30px;
+    } 
+    header ul.navlinks{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image:linear-gradient(25deg,#4caf51 25%,rgba(40,60,117) 25%);
+    border-radius: 15px;
+   transition-property: width 2s ;
+   transition-delay: 5s;
+   transition-timing-function: linear;
+   margin: -900px;
+ }
+    /* width: 100%;
+    height: 100vh;
+justify-content: center; */
+
+
+header ul.navlinks li{
+    color: white;
+    margin: 30px auto;
+}
+.active{
+    text-decoration: none;
+}
+.btn{
+    font-style: normal;
+    
+}
+
+.row{
+    flex-direction: column;
+}
+.row .col{
+    margin: 20px auto;
+}
+.col img{
+    max-width: 90%;
+}
+.explore-content{
+    width: 100%; 
+}
+.tours .col{
+    width: 100%;
+}
+.image-gallery{
+    justify-content: center;
+    align-items: center;
+}
+.image-gallery img{
+   width: 90%; 
+}
+.footer{
+    padding: 10px;
+}
+.menu-btn{
+    display:block;
+   position: absolute; 
+   top:30px;
+   right: 30px;
+   width:40px;
+   cursor: pointer;
+   
+}
+
+
+
+}
+
+section{
+    width:80%;
+    margin: 80px auto;
+}
+.events .row {
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: rgba(40,60,117);
+    margin: 20px auto;
+}
+.title{
+   text-align: center; 
+   color: rgba(40,60,117);
+   font-size: 4vmin;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+     justify-content: space-between; 
+    background-color: none;
+}
+ .row .col img{
+    width: 80%;
+    
+}  
+/*.row .Everest{
+    width: 80%;
+    height: 100%;  
+} */
+.row .col{
+display: flex;
+flex-direction:column;
+align-items: center;
+}
+.col p{
+    color:#333;
+    padding: 0px 40px;
+}
+.events .btn{
+    margin: 30px;
+}
+.explore{
+   width: 100%;
+   height:100vh;
+   background-image: url('https://travelinsurance.com.ph/storage/travel-documents-needed.jpg'); 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+font-size: 7vmin;
+}
+.explore-content line{
+    margin-bottom: 50px;
+}
+.explore-content p{
+    color: white;
+}
+.explore-content .btn{
+   margin-top: 40px; 
+}
+ .content-col{
+    width: 40%;
+}
+.image-col{
+   width: 60%; 
+} 
+.tours .image-gallery{
+  display: flex; 
+  flex-wrap: wrap; 
+  width: 100%;
+  align-items: center;
+}
+.image-gallery img{
+   max-width:300px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color:rgba(40,60,117);
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    
+    padding: 0;
+    margin: 30px auto;
+}
+.content-col btn{
+    margin-left:-100px;
+}
+.footer{
+  width: 100%;
+  min-height: 100%;  
+  padding: 200px 80px;
+  margin:0;
+  background: rgb(40,60,117);
+  text-align: center;
+}
+.footer p{
+    color: white;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+transform: scale(1.1);
+}
+.btn{
+    transition: transform .3s ease;  
+}
+.btn:hover{
+    transform: rotate(360deg);
+    background-color: white; 
+    color: green; 
+    box-shadow: 2px 2px 5px black; 
+}
+.navlinks li{
+    transition: transform .3s ease;
+}
+.navlinks:hover li{
+    font-weight: bold;
+    transform: scale(1.1);  
+}
